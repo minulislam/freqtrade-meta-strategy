@@ -32,4 +32,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: yggdrasilex/freqtrade-meta-strategy:latest
+          tags: s1rxploit/freqtrade-meta-strategy:latest
