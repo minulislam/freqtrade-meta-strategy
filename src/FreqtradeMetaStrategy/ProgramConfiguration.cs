@@ -2,7 +2,7 @@ namespace FreqtradeMetaStrategy
 {
     public class ProgramConfiguration
     {
-        public string StrategyRepositoryUrl { get; set; } = "https://github.com/freqtrade/freqtrade-strategies.git";
+        public string StrategyRepositoryUrl { get; set; } = "https://github.com/minulislam/freqtrade-strategies.git";
         public string CoingeckoApiBaseUrl { get; set; } = "https://api.coingecko.com/api/v3";
         public string CoingeckoGetTickersMethod { get; set; } = "exchanges/$(exchange)/tickers?page=$(page)";
         public string CoingeckoGetCoinDataMethod { get; set; } = "coins/$(coin)?tickers=false&market_data=false&community_data=false&developer_data=false";
@@ -15,7 +15,7 @@ namespace FreqtradeMetaStrategy
         public int VolumeWeight { get; set; } = 1;
         public int TrustWeight { get; set; } = 1;
         public int RateLimitTimeout { get; set; } = 70000;
-        public int BackTestingPairsBatchSize { get; set; } = 10;
+        public int BackTestingPairsBatchSize { get; set; } = 100;
         public double MinimumTrustScore { get; set; } = 50;
         public double MinimumDailyProfit { get; set; } = 0.005;
         public double MinimumTradesPerDay { get; set; } = 1;
